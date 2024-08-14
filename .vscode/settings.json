@@ -1,0 +1,12 @@
+{
+    "cmake.generator": "Ninja",
+    "clangd.checkUpdates": true,
+    "clangd.arguments": [
+        "--background-index", /// 在后台自动分析文件（基于complie_commands)
+        "--compile-commands-dir=D:\\git\\hidden_demo\\build_make", /// 标记compelie_commands.json文件的目录位置
+        "-j=4", /// 同时开启的任务数量
+        "--query-driver=clang++.exe", /// clang 路径，使用命令 which clang++ 获取的的路径
+        "--completion-style=detailed", /// 更详细的补全内容
+        "--pch-storage=disk", /// pch优化的位置
+    ],
+}
